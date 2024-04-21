@@ -38,12 +38,10 @@
   color: #4682a9;
   font-size: 35px;
   font-weight: 600;
-  margin: 20px 0 0 0;
 }
 
 .Weather ul {
   padding: 0;
-  margin: 0;
 }
 
 .Weather li {
@@ -54,22 +52,28 @@
   list-style: none;
 }
 
-.Weather img {
-  height: 65px;
-  width: 65px;
+.Weather .WeatherInfo {
+  border-top: 1px solid #f6f4eb;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Weather .WeatherInfo-today {
+  display: flex;
+}
+
+.Weather canvas {
+  padding-top: 20px;
 }
 
 .Weather .temperature {
   font-weight: 400;
   font-size: 65px;
-  line-height: 65px;
-  margin-left: 10px;
+  padding-left: 10px;
 }
 
 .Weather .unit {
-  color: rgba(39, 33, 66, 0.6);
   font-size: 20px;
-  position: relative;
-  top: -32px;
-  line-height: 1;
+  padding-top: 20px;
 }
