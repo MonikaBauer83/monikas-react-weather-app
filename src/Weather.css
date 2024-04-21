@@ -57,9 +57,13 @@
   padding-top: 10px;
 }
 
+.Weather .WeatherInfo-details {
+  display: flex;
+  justify-content: space-between;
+}
+
 .Weather .WeatherInfo-today {
   display: flex;
-  justify-content: right;
 }
 
 .Weather canvas {
@@ -74,4 +78,6 @@
 
 .Weather .unit {
   font-size: 20px;
+  position: relative;
+  bottom: 32px;
 }
