@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./Weather.css";
 
@@ -13,7 +14,7 @@ export default function Weather(props) {
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
       icon: `https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png`,
-      date: "Sunday 14:20",
+      date: new Date(response.data.time * 1000),
     });
   }
 
@@ -38,7 +39,9 @@ export default function Weather(props) {
 
         <h1>{weatherData.city}</h1>
         <ul>
-          <li>{weatherData.date}</li>
+          <li>
+            <FormattedDate date={weatherData.date} />
+          </li>
           <li className="text-capitalize">{weatherData.description}</li>
         </ul>
         <div className="row mt-3">
@@ -47,7 +50,7 @@ export default function Weather(props) {
             <span className="temperature">
               {Math.round(weatherData.temperature)}
             </span>
-            <sapn className="unit">°C</sapn>
+            <span className="unit">°C</span>
           </div>
           <div className="col-6">
             <ul>
