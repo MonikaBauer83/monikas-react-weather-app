@@ -55,12 +55,11 @@
 .Weather .WeatherInfo {
   border-top: 1px solid #f6f4eb;
   padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .Weather .WeatherInfo-today {
   display: flex;
+  justify-content: right;
 }
 
 .Weather canvas {
@@ -70,10 +69,9 @@
 .Weather .temperature {
   font-weight: 400;
   font-size: 65px;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 .Weather .unit {
   font-size: 20px;
-  padding-top: 20px;
 }
