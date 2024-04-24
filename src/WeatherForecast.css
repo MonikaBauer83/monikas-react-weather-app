@@ -1,9 +1,17 @@
 .WeatherForecast {
   text-align: center;
   color: rgba(39, 33, 66, 0.8);
+  font-size: 18px;
+  margin: 20px auto;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #f6f4eb;
+}
+
+.WeatherForecast-day {
+  padding-bottom: 10px;
 }
 
 .WeatherForecast-temperatuere-min {
-  color: rgba(39, 33, 66, 0.6);
+  color: rgba(39, 33, 66, 0.5);
   margin-left: 5px;
 }

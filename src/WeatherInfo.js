@@ -13,14 +13,20 @@ export default function WeatherInfo(props) {
               <FormattedDate date={props.data.date} />
             </li>
             <li className="text-capitalize">{props.data.description}</li>
-            <li>Humidity: {props.data.humidity} %</li>
-            <li>Wind: {props.data.wind} km/h</li>
+            <li>
+              Humidity:{" "}
+              <span className="special-color">{props.data.humidity} %</span>
+            </li>
+            <li>
+              Wind:{" "}
+              <span className="special-color">{props.data.wind} km/h</span>
+            </li>
           </ul>
         </div>
 
         <div className="WeatherInfo-today col-5">
           <div className="WeatherInfo-icon">
-            <WeatherIcon code={props.data.icon} size={55} />
+            <WeatherIcon code={props.data.icon} size={80} />
           </div>
           <span className="WeatherInfo-temperature">
             {Math.round(props.data.temperature)}
