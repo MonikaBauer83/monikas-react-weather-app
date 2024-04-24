@@ -66,18 +66,22 @@
   display: flex;
 }
 
-.Weather canvas {
+.Weather .WeatherInfo-icon {
   padding-top: 20px;
 }
 
-.Weather .temperature {
+.Weather .WeatherInfo-temperature {
   font-weight: 400;
   font-size: 65px;
   padding-left: 5px;
 }
 
-.Weather .unit {
+.Weather .weatherToday-unit {
   font-size: 20px;
   position: relative;
-  bottom: 32px;
+  top: 19px;
+}
+
+.Weather .WeatherForecast-day {
+  padding-bottom: 10px;
 }
