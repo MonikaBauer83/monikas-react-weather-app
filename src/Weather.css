@@ -72,13 +72,11 @@
 
 .Weather .WeatherInfo-temperature {
   font-weight: 400;
-  font-size: 80px;
+  font-size: 90px;
   position: relative;
-  bottom: 10px;
+  bottom: 30px;
 }
 
 .Weather .weatherToday-unit {
   font-size: 25px;
-  position: relative;
-  top: 13px;
 }
